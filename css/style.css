@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    background-color: white;
+}
+#logo h1{
+    color: #70A52B;
+    padding-left: 1rem;
+}
+#logo h1 span{
+    color: black;
+}
+#menu{
+    display: flex;
+    list-style-type: none;
+}
+#menu li a {
+    transition: 0.10s;
+    color: black;
+    text-decoration: none;
+}
+#menu li {
+    padding: 1rem;
+}
+#menu li a:hover {
+    color: white;
+}
+#menu li:hover{
+    background-color: green;;
+}
+#butao{
+    display: none;
+    margin-right: 2rem;
+}
+#banner{
+    display: flex;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#comprar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#comprar button{
+    font-size: 35px;
+    border-radius: 20px;
+    background-color: #008B5E;
+    color: white;
+    height: 90px;
+    border-color: rgba(255, 255, 255, 0.1);
+    transition: .5s;
+}
+#comprar button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #008B5E;
+    color:white ;
+    margin-top: 60px;
+}
+#segundaSessao{
+    display: flex;
+}
+#sobre{
+    display: flex;
+    justify-content: center;
+}
+#imagem2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#imagem2 img{
+    width: 70%;
+    height: 70%;
+}
+#texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+#sobre h2{
+    display: flex;
+    align-items: center;
+}
+#sobre-texto{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.Fformulario{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    border-color: black;
+
+}
+.agrupamento{
+    padding: 25px;
+}
+
+#Fmotivo{
+    text-align: justify;
+    margin-top: 40px;
+    width: 80%;
+    height: 20%;
+}
+#enviar{
+    background-color:#008B5E;
+    border-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    margin-top: 30px;
+    width: 150px;
+    height: 70px;
+    color: white;
+}
+#enviar:hover{
+    border-color: green;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+footer{
+    color: white;
+    display: flex;
+    background-color: #008B5E;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+
+
+
+@media(max-width:900px){
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        transition: .6s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    #nav.active #menu{
+       height: calc(100vh - 86px);
+       visibility: visible;
+       overflow-y: auto;
+        
+    }
+    #menu li a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        color: whitesmoke;
+    }
+    #menu li{
+        background-color:#135E46;
+    }
+    #butao{
+        display: flex;
+        pad: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 5rem;
+    }
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+        border-color: black;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: black;
+    }
+    #comprar{
+        width: 100%;
+        justify-content: center;
+    }
+    #segundaSessao{
+        flex-direction: column;
+    }
+    #sobre-texto{
+        font-size: 15px;
+        padding: 7px;
+    }
+    #texto{
+        width: 100%;
+    }
+    #imagem2{
+        width: 100%;
+    }
+    #imagem2 img{
+        height: 400px;
+    }
+    .Fformulario{
+        width: 100%;
+    }
+    #Fmotivo{
+        margin-top: 10px;
+    }
+    .agrupamento{
+        padding: 0px;
+    }
+    .agrupamento input{
+        display: flex;
+        margin-top: 20px;
+        
+    }
+}
+
+
+@media(max-width:600px){
+    .agrupamento{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .agrupamento input{
+        width: 90%;
+    }
+    #formulario form{
+        width: 100%;
+    }
+    #formulario{
+        height: 80vh;
+    }
+    #imagem2 img{
+        height: 280px;
+    }
+}

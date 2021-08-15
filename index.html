@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1><span>DISK</span> FUTE</h1>
+        </div>
+        <nav id="nav">
+            <button id="butao">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li>
+                    <a href="#">INICIO</a>
+                </li>
+                <li>
+                    <a href="#sobre">SOBRE</a>
+                </li>
+                <li>
+                    <a href="http://">FORMULARIO</a>
+                </li>
+                <li>
+                    <a href="http://">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <div id="comprar">
+            <button>Fale Conosco</button>
+        </div>
+    </section>
+    <section id="segundaSessao">
+        <div id="imagem2">
+            <img src="img/sobre.png" loading="lazy" alt="">
+        </div>
+        <div id="texto">
+            <div id="sobre">
+                <h2>SOBRE</h2>
+            </div>
+            <div id="sobre-texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, optio ut. Odio minima asperiores optio excepturi repellat, eum, soluta veniam nemo fugit totam 
+                    possimus vitae eius incidunt sequi perspiciatis fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut eius praesentium, ad mollitia quis perferendis consequuntur, tempora iure et quo cum repellat dolorem sint ipsa? In, 
+                    repellat. Tempore, iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, atque vel nesciunt reiciendis incidunt labore debitis iure eum reprehenderit aliquid repellat sit odio. Asperiores corporis temporibus deserunt 
+                    praesentium enim nesciunt?</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="formulario">
+        <h2>FORMULARIO</h2>
+        <form action="">
+            <div class="agrupamento">
+                <input class="Fformulario" type="text" id="fnome" placeholder="Nome">
+                <input class="Fformulario" type="text" placeholder="Time" list="times">
+                <datalist id="times">
+                    <option value="Vasco da Gama">
+                    <option value="Santos">
+                    <option value="Palmeira">
+                    <option value="Barcelona">
+                </datalist>
+            </div>
+            <div class="agrupamento">
+                <input id="Festado" class="Fformulario" type="text" placeholder="Estado" list="estado">
+                <datalist id="estado">
+                    <option value="BH">
+                    <option value="DF">
+                    <option value="GO">
+                    <option value="RJ">
+                </datalist>
+                <input class="Fformulario" placeholder="Email" type="email" id="email" name="email">
+            </div>
+            <textarea class="Fformulario" id="Fmotivo" type="text" placeholder="Motivo"></textarea>
+            <input class="Fformulario" id="enviar" type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        Desenvolvido pelo Gabriel Gusmão
+    </footer>
+</body>
+</html>
