@@ -27,9 +27,9 @@
 <h2 align="center">
     <img width="800" height="500" alt="Readme" title="Readme" src="./gitgif/gifPagina.gif">
 </h2>
-<h2 target="_blank" align="center">
+<h2 align="center">
      <a style="color:white;background-color:green;font-size: 30px;
-    border-radius: 10px;text-decoration: none" href="http://frontendprojeto.epizy.com/?i=1">TESTAR A DEMO</a> 
+    border-radius: 10px;text-decoration: none" target= "_blank" rel="noreferrer noopener" href="http://frontendprojeto.epizy.com/?i=1">TESTAR A DEMO</a> 
 </h2>
 
 </br>
