@@ -249,6 +249,9 @@ footer{
 
 
 @media(max-width:600px){
+    body {
+        min-height: 100vh;
+    }
     .agrupamento{
         align-items: center;
         display: flex;
@@ -261,7 +264,7 @@ footer{
         width: 100%;
     }
     #formulario{
-        height: 80vh;
+        height: 90vh;
     }
     #imagem2 img{
         height: 280px;
