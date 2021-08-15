@@ -266,7 +266,7 @@ footer{
     #imagem2 img{
         height: 280px;
     }
-    body {
-        position: absolute;
+    html, body {
+     min-height:100%;height:100%;
     }
 }
