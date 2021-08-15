@@ -261,12 +261,9 @@ footer{
         width: 100%;
     }
     #formulario{
-        height: 90vh;
+        height: 100vh;
     }
     #imagem2 img{
         height: 280px;
-    }
-    html, body {
-     min-height:100%;height:100%;
     }
 }
