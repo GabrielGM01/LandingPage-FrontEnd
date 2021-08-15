@@ -249,9 +249,6 @@ footer{
 
 
 @media(max-width:600px){
-    body {
-        min-height: 100vh;
-    }
     .agrupamento{
         align-items: center;
         display: flex;
@@ -268,5 +265,8 @@ footer{
     }
     #imagem2 img{
         height: 280px;
+    }
+    footer{
+        display: none;
     }
 }
