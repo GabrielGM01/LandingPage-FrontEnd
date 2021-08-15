@@ -53,4 +53,4 @@
 </br>
 <hr>
 <h2 id="autor">Gabriel Gusmão</h2>
-<h3>Linkedin: <a target="_blank">https://www.linkedin.com/in/gabriel-gusm%C3%A3o-moreno-034113199</a></h3>
+<h3>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/gabriel-gusm%C3%A3o-moreno-034113199">https://www.linkedin.com/in/gabriel-gusm%C3%A3o-moreno-034113199</a></h3>
