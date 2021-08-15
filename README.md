@@ -6,7 +6,7 @@
     <a href="#autor">Autor</a> 
 </p>
 <h4 align="center"> 
-  > Status do Projeto: Em desenvolvimento 
+  > Status do Projeto: Em desenvolvimento ⚠⚠
 </h4>
 </br>
 </br>
