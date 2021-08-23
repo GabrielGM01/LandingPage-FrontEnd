@@ -25,7 +25,7 @@
 </br> 
   
 <h2 align="center">
-    <img width="800" height="500" alt="Readme" title="Readme" src="./gitgif/gifPagina.gif">
+    <img alt="Readme" title="Readme" src="./gitgif/gifPagina.gif">
 </h2>
 <h2 align="center">
      <a style="color:white;background-color:green;font-size: 30px;
