@@ -6,7 +6,7 @@
     <a href="#autor">Autor</a> 
 </p>
 <h4 align="center"> 
-  > Status do Projeto: Em desenvolvimento ⚠⚠
+  > Status do Projeto: Concluído 💥💥
 </h4>
 </br>
 </br>
@@ -17,8 +17,8 @@
 - [x] Criar o Banner 
 - [x] Criar a sessão sobre
 - [x] Criar formulario 
-- [ ] Fazer sessão contato
-- [ ] Construir o rodapé da página
+- [x] Fazer sessão contato
+- [x] Construir o rodapé da página
 
 </br>
 </br>
