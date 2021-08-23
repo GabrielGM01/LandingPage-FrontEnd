@@ -25,7 +25,7 @@
                     <a href="#sobre">SOBRE</a>
                 </li>
                 <li>
-                    <a href="http://">FORMULARIO</a>
+                    <a id="botao_formulario" onclick="clique()">FORMULARIO</a>
                 </li>
                 <li>
                     <a href="http://">CONTATO</a>
@@ -35,7 +35,7 @@
     </header>
     <section id="banner">
         <div id="comprar">
-            <button>Fale Conosco</button>
+            <button onclick="clique()">Fale Conosco</button>
         </div>
     </section>
     <section id="segundaSessao">
@@ -54,34 +54,35 @@
             </div>
         </div>
     </section>
-    <hr>
-    <section id="formulario">
-        <h2>FORMULARIO</h2>
-        <form action="">
-            <div class="agrupamento">
-                <input class="Fformulario" type="text" id="fnome" placeholder="Nome">
-                <input class="Fformulario" type="text" placeholder="Time" list="times">
-                <datalist id="times">
-                    <option value="Vasco da Gama">
-                    <option value="Santos">
-                    <option value="Palmeira">
-                    <option value="Barcelona">
-                </datalist>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <form id="formulario" action="">
+                    <fieldset>
+                        <legend>Formulário</legend>
+                        <span id="fechar" onclick="tirar()">&times;</span>
+                        <p>
+                            <label for="nome">
+                                Nome <input type="text" id="nome">
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                E-mail <input type="email" id="email">
+                            </label>
+                        </p>
+                        <p>
+                            <label for="texto">
+                                Texto
+                                <textarea name="" id="texto" cols="30" rows="10"></textarea>
+                            </label>
+                        </p>
+                        <p id="Enviar">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </fieldset>
+                </form>
             </div>
-            <div class="agrupamento">
-                <input id="Festado" class="Fformulario" type="text" placeholder="Estado" list="estado">
-                <datalist id="estado">
-                    <option value="BH">
-                    <option value="DF">
-                    <option value="GO">
-                    <option value="RJ">
-                </datalist>
-                <input class="Fformulario" placeholder="Email" type="email" id="email" name="email">
-            </div>
-            <textarea class="Fformulario" id="Fmotivo" type="text" placeholder="Motivo"></textarea>
-            <input class="Fformulario" id="enviar" type="submit" value="Enviar">
-        </form>
-    </section>
+        </div>
     <footer>
         Desenvolvido pelo Gabriel Gusmão
     </footer>

@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
+/*----------------------------------------------------- Header Style*/
 header{
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,9 @@ header{
     position:sticky;
     top: 0;
     background-color: white;
+}
+#botao_formulario{
+    cursor: pointer;
 }
 #logo h1{
     color: #70A52B;
@@ -24,23 +28,20 @@ header{
     list-style-type: none;
 }
 #menu li a {
-    transition: 0.10s;
     color: black;
     text-decoration: none;
 }
 #menu li {
     padding: 1rem;
 }
-#menu li a:hover {
-    color: white;
-}
 #menu li:hover{
-    background-color: green;;
+   background-color: #70A52B;
 }
 #butao{
     display: none;
     margin-right: 2rem;
 }
+/*------------------------------------------------------------- Banner Style*/
 #banner{
     display: flex;
     background-image: url(../img/banner.png);
@@ -55,6 +56,7 @@ header{
     width: 100%;
 }
 #comprar button{
+    cursor: pointer;
     font-size: 35px;
     border-radius: 20px;
     background-color: #008B5E;
@@ -69,6 +71,7 @@ header{
     color:white ;
     margin-top: 60px;
 }
+/*-------------------------------------------------------------Sobre Style*/
 #segundaSessao{
     display: flex;
 }
@@ -103,51 +106,85 @@ header{
     text-align: justify;
     font-size: 20px;
 }
-#formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-}
-#formulario form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*---------------------------------------------------------------Formulario Style*/
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1,1);
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
-.Fformulario{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    height: 40px;
+.modal-content{
+    padding: 16px 24px;
+    border-radius: 0.5rem;
+}
+#fechar{
+    float:right;
+    width: 24px;
+    cursor: pointer;
     text-align: center;
-    border-color: black;
-
+    line-height: 24px;
+    font-size: 40px;
+    margin-top: -20px;
 }
-.agrupamento{
-    padding: 25px;
-}
-
-#Fmotivo{
-    text-align: justify;
-    margin-top: 40px;
-    width: 80%;
-    height: 20%;
-}
-#enviar{
-    background-color:#008B5E;
-    border-color: rgba(255, 255, 255, 0.1);
-    font-size: 20px;
-    margin-top: 30px;
-    width: 150px;
-    height: 70px;
+#fechar:hover{
+    background-color: black;
     color: white;
 }
-#enviar:hover{
-    border-color: green;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: black;
+.show-modal{
+    opacity: 5;
+    visibility: visible;
+    transform: scale('1.0');
 }
+#formulario{
+    border-radius: 10px;
+    height: 100%;
+    background-image: url(../img/background_form.jpg);
+}
+#formulario fieldset{
+    border-color: rgba(255, 255, 255, 0.0);
+}
+#formulario fieldset legend{
+    padding-top:10px;
+}
+#formulario input{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+#texto{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+#Enviar{
+    display: flex;
+    justify-content: center;
+}
+#Enviar button{
+    background-color: #008B5E;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    font-size: 35px;
+    transition: 0.5s;
+}
+#Enviar button:hover{
+    background-color:white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------Rodape Style*/
 footer{
     color: white;
     display: flex;
@@ -157,13 +194,7 @@ footer{
     align-items: center;
 }
 
-@media(max-height:700px){
-    #formulario{
-        height: 100vh;
-    }
-}
-
-
+/*---------------------------------------------- Responsive*/
 @media(max-width:900px){
     #menu{
         display: block;
@@ -234,40 +265,5 @@ footer{
     }
     #imagem2 img{
         height: 400px;
-    }
-    .Fformulario{
-        width: 100%;
-    }
-    #Fmotivo{
-        margin-top: 10px;
-    }
-    .agrupamento{
-        padding: 0px;
-    }
-    .agrupamento input{
-        display: flex;
-        margin-top: 20px;
-        
-    }
-}
-
-
-@media(max-width:600px){
-    .agrupamento{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .agrupamento input{
-        width: 90%;
-    }
-    #formulario form{
-        width: 100%;
-    }
-    #formulario{
-        height: 700px;
-    }
-    #imagem2 img{
-        height: 280px;
     }
 }
