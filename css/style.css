@@ -274,7 +274,7 @@ footer{
         flex-direction: column;
     }
     #sobre-texto{
-        font-size: 15px;
+        font-size: 20px;
         padding: 7px;
     }
     #texto{
@@ -285,5 +285,21 @@ footer{
     }
     #imagem2 img{
         height: 400px;
+    }
+    #ContatoTxt{
+        width: 100%;
+    }
+    #ContatoImg{
+        display: none;
+    }
+}
+
+@media(max-width:650px){
+    #imagem2 img{
+        height: 250px;
+    }
+    #sobre-texto{
+        font-size: 20px;
+        padding: 10px;
     }
 }
