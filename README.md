@@ -29,7 +29,7 @@
 </h2>
 <h2 align="center">
      <a style="color:white;background-color:green;font-size: 30px;
-    border-radius: 10px;text-decoration: none" target= "_blank" rel="noreferrer noopener" href="https://gabrielgm01.github.io/LandingPage-FrontEnd/">TESTAR A DEMO</a> 
+    border-radius: 10px;text-decoration: none" target= "_blank" rel="noreferrer noopener" href="https://gabrielgm01.github.io/LandingPage-FrontEnd/">Clique Aqui Para testar o Site</a> 
 </h2>
 
 </br>
