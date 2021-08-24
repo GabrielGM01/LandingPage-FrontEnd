@@ -198,10 +198,12 @@ header{
 }
 #ContatoImg{
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 #ContatoImg img{
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
 }
 
 /*-------------------------------------------------------------Rodape Style*/
@@ -301,5 +303,8 @@ footer{
     #sobre-texto{
         font-size: 20px;
         padding: 10px;
+    }
+    #Contato{
+        width: 100%;
     }
 }
